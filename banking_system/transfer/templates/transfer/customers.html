@@ -1,0 +1,13 @@
+{% extends 'transfer/base/base.html' %}
+
+{% block title %}
+    Our Customers
+{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for customer in customers %}
+            <li>{{customer}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
